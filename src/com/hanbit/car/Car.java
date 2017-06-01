@@ -10,6 +10,13 @@ public class Car {
 	private boolean startedUp;
 	private String gear = "P";
 	private int speed;
+	
+	public void showState() {
+		System.out.print("승객: " + passengers + "명, ");
+		System.out.print("시동 " + (startedUp ? "걸림" : "꺼짐") + ", ");
+		System.out.print("기어: " + gear + ", ");
+		System.out.println("속도: " + speed + "km/h");
+	}
 
 	public void openDoor() {
 		doorOpened = true;
@@ -38,6 +45,10 @@ public class Car {
 	}
 	
 	public void accelerate() {
+		if ("P".equals(gear) || "N".equals(gear)) {
+			return;
+		}
+		
 		speed += 10;
 		
 		if (speed >= maxSpeed) {
