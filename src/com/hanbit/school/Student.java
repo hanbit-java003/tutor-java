@@ -52,6 +52,12 @@ public class Student {
 	public void setNo(int no) {
 		this.no = no;
 	}
+	
+	public void setStudentNo(String studentNo) {
+		grade = Integer.valueOf(studentNo.substring(0, 2));
+		classNo = Integer.valueOf(studentNo.substring(2, 4));
+		no = Integer.valueOf(studentNo.substring(4, 6));
+	}
 
 	public String getStudentNo() {
 		String studentNo = "";
