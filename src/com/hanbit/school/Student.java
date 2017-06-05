@@ -1,9 +1,10 @@
 package com.hanbit.school;
 
-public class Student {
+import com.hanbit.Person;
+
+public class Student extends Person {
 
 	// 멤버 속성
-	private String name;
 	private int grade;
 	private int classNo;
 	private int no;
@@ -23,10 +24,6 @@ public class Student {
 	// 멤버 메소드
 	public Report getReport() {
 		return report;
-	}
-	
-	public String getName() {
-		return name;
 	}
 	
 	public int getGrade() {

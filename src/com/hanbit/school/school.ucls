@@ -3,7 +3,7 @@
   associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="com.hanbit.school.Student" project="tutor-java" 
     file="/tutor-java/src/com/hanbit/school/Student.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="414" y="200"/>    
+    <position height="-1" width="-1" x="350" y="450"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -12,7 +12,7 @@
   </class>  
   <class id="2" language="java" name="com.hanbit.school.Report" project="tutor-java" 
     file="/tutor-java/src/com/hanbit/school/Report.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="663" y="203"/>    
+    <position height="-1" width="-1" x="765" y="435"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -21,17 +21,34 @@
   </class>  
   <class id="3" language="java" name="com.hanbit.school.SchoolApp" project="tutor-java" 
     file="/tutor-java/src/com/hanbit/school/SchoolApp.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="188" y="173"/>    
+    <position height="-1" width="-1" x="474" y="138"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <association id="4">    
+  <class id="4" language="java" name="com.hanbit.Person" project="tutor-java" 
+    file="/tutor-java/src/com/hanbit/Person.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="108" y="229"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <generalization id="5">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="4"/>  
+  </generalization>  
+  <association id="6">    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="5" name="report"/>      
-      <multiplicity id="6" minimum="0" maximum="1"/>    
+      <attribute id="7" name="report">        
+        <position height="0" width="0" x="102" y="232"/>      
+      </attribute>      
+      <multiplicity id="8" minimum="0" maximum="1">        
+        <position height="0" width="0" x="102" y="232"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  

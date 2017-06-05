@@ -1,25 +1,35 @@
 package com.hanbit.company;
 
-public class Employee {
+import com.hanbit.Person;
+import com.hanbit.job.Job;
+
+public class Employee extends Person implements Job {
 
 	private String empNo;
-	private String name;
 	private String deptName;
-	private long salary;
+	protected long salary;
 	
 	public Employee(String empNo, String name) {
 		this.empNo = empNo;
 		this.name = name;
 	}
 	
+	protected void fire() {
+		System.out.println("짤림");
+	}
+	
+	public String toString() {
+		return name + "(" + empNo + ")";
+	}
+	
+	public String getJobType() {
+		return getClass().getSimpleName();
+	}
+	
 	public String getEmpNo() {
 		return empNo;
 	}
 
-	public String getName() {
-		return name;
-	}
-	
 	public long getSalary() {
 		return salary;
 	}
@@ -34,6 +44,11 @@ public class Employee {
 
 	public void setDeptName(String deptName) {
 		this.deptName = deptName;
+	}
+
+	@Override
+	public String getJobName() {
+		return "직원";
 	}
 
 }

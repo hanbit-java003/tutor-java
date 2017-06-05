@@ -7,6 +7,10 @@ public class Manager extends Employee {
 	public Manager(String empNo, String name) {
 		super(empNo, name);
 	}
+	
+	public long getSalary() {
+		return salary + bonus;
+	}
 
 	public long getBonus() {
 		return bonus;
@@ -14,6 +18,11 @@ public class Manager extends Employee {
 
 	public void setBonus(long bonus) {
 		this.bonus = bonus;
+	}
+	
+	@Override
+	public String getJobName() {
+		return "관리자";
 	}
 	
 }
