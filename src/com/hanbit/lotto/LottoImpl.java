@@ -26,7 +26,7 @@ public class LottoImpl implements Lotto {
 	private int getNextNum() {
 		// 1 ~ 45 사이의 랜덤값
 		Random random = new Random();
-		return random.nextInt(45) + 1;
+		return random.nextInt(45) +1;
 	}
 	
 }

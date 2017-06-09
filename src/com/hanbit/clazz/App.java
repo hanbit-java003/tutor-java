@@ -18,6 +18,7 @@ public class App {
 		
 		System.out.println("회원1: " + member1.getId());
 		System.out.println("회원2: " + member2.getId());
+		System.out.println("회원2: " + member2.getId());
 	}
 	
 }

@@ -21,7 +21,7 @@ public class StringMethod {
 		
 		String apple = "apple".replace("p", "P");
 		
-		System.out.println(apple);
+		System.out.println(index);
 	}
 	
 }

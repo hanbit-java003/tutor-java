@@ -18,7 +18,7 @@ public class Types {
 		
 		String string = "Hello";
 		
-		System.out.println(string);
+		System.out.println(floatNumber);
 	}
 	
 }
